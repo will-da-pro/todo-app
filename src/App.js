@@ -74,7 +74,7 @@ class TodoList extends React.Component {
         return (
             <form id="todo-items" onSubmit={this.clearSelected}>
                 {rows}
-                <input type="submit" name="clear-selected" id="clear-selected" value="Clear selected"/>
+                <input className="clear-button" type="submit" name="clear-selected" id="clear-selected" value="Clear selected"/>
             </form>
         )
     }
@@ -129,7 +129,7 @@ class App extends React.Component {
                 onClearSelected={
                     this.handleClearSelected
                 }/>
-                <button onClick={this.handleClearAll}>Clear all</button>
+                <button className="clear-button" id="clear-all" onClick={this.handleClearAll}>Clear all</button>
                 <TodoForm onItemAdded={
                     this.handleTodoChange
                 }/>

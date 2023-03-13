@@ -68,7 +68,7 @@ label {
 #todo-items {
   word-wrap: break-word;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .todo-item {
@@ -79,3 +79,26 @@ label {
   padding-bottom: 5px;
 }
 
+.clear-button {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: gray;
+}
+
+.clear-button:active {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+#clear-all {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
